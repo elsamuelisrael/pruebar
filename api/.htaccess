@@ -1,0 +1,7 @@
+RewriteEngine On
+# Handle Front Controller...
+# sudo a2enmod rewrite
+# AllowOverride All
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
